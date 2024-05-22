@@ -5,6 +5,6 @@ const newsController = require('../app/controllers/NewsController');
 
 // newsController.index;
 router.use('/:slug', newsController.show);
-router.use('/', newsController.index);  // tuyen duong '/' luon nam o duoi de 
+router.use('/', newsController.index); // tuyen duong '/' luon nam o duoi de
 
 module.exports = router;

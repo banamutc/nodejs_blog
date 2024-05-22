@@ -4,6 +4,7 @@
   "description": "Blog Demo",
   "main": "src/index.js",
   "scripts": {
+    "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --embed-source-map --watch src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,13 +26,19 @@
     "url": "https://github.com/banamutc/nodejs_blog/issues"
   },
   "homepage": "https://github.com/banamutc/nodejs_blog#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4"
+  },
   "dependencies": {
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2"
   },
   "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.4",
     "morgan": "^1.10.0",
     "node-sass": "^9.0.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
   }
 }
