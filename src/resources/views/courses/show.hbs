@@ -1,0 +1,27 @@
+<div class='mt-4'>
+    <div class='row'>
+        <div class='col-lg-3'>
+            <a
+                href='https://fullstack.edu.vn/learning/nodejs?id=4b5a2766-dbd7-470b-83e8-c84f4a37d550'
+            >
+                <button>HỌC NGAY</button></a>
+
+            <ul>
+                <li>{{course.level}}</li>
+            </ul>
+        </div>
+
+        <div class='col-lg-9'>
+            <h2>{{course.name}}</h2>
+            <iframe
+                width='560'
+                height='315'
+                src='https://www.youtube.com/embed/{{course.videoId}}'
+                frameborder='0'
+                allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen
+            ></iframe>
+            <p>{{course.description}}</p>
+        </div>
+    </div>
+</div>
